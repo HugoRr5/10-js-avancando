@@ -28,11 +28,24 @@ function adicionar() {
        let item = document.createElement('option')
        item.text= `Valor ${num.value} adicionado.`
        lista.appendChild(item)
-        
+
 
 
     }else {
         window.alert('valor invalido ou ja encontrado na lista')
     }
+    num.value=''
+    num.focus()
+
+}function Finalizar(){
+    if(valores.length ==0){
+        window.alert ("adicionar valores antes de finalizar")
+    }else{
+        let tot = valores.length
+
+        res.innerHTML=''
+        res.innerHTML+= `<p>Ao todo , temos${tot}numeros cadastrados.</p>`
+    }
+
 
 }
