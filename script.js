@@ -46,16 +46,23 @@ function finalizar(){
         let tot = valores.length
         let maior =valores [0]
         let menor = valores [0]
+        let soma =0
+        let media =0
+
         for (let pos in valores){
             if(valores[pos] > maior)
-            maior =valores[pos]
+                maior =valores[pos]
             if(valores[pos] < menor)
-            menor = valores [pos]
+                menor = valores [pos]
         }
+        media = soma / tot
         res.innerHTML =''
         res.innerHTML += `<p>Ao todo , temos ${tot} numeros cadastrados.</p>`
         res.innerHTML += `<p>o maior valor informado foi ${maior}.</p>`
         res.innerHTML += `<p>o menor valor informado foi ${menor}.</p>`
+        res.innerHTML += `<p>Somando todos s  valores ,temos ${soma}.</p>`
+        res.innerHTML += `<p> a media dos valores digitalizados e ${media}.</p>`
+
     }
 
 
