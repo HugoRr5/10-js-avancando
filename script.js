@@ -37,14 +37,15 @@ function adicionar() {
     num.value=''
     num.focus()
 
-}function Finalizar(){
+}
+function finalizar(){
     if(valores.length ==0){
         window.alert ("adicionar valores antes de finalizar")
     }else{
         let tot = valores.length
 
-        res.innerHTML=''
-        res.innerHTML+= `<p>Ao todo , temos${tot}numeros cadastrados.</p>`
+        res.innerHTML =''
+        res.innerHTML += `<p>Ao todo , temos ${tot} numeros cadastrados.</p>`
     }
 
 
